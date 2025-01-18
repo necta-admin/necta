@@ -30,7 +30,7 @@ body {
     max-width: 90%;
     height: auto;
     max-height: 300px;
-    pointer-events: none; /* Prevent image dragging */
+    pointer-events: none;
 }
 
 .contact-icons {
@@ -43,14 +43,13 @@ body {
     display: inline-block;
 }
 
-.contact-icons i {
+.contact-icons img {
     opacity: 0.5;
-    font-size: 35px;
-    color: #ffffff;
+    width: 35px;
     transition: opacity 0.7s ease;
 }
 
-.contact-icons a:hover i {
+.contact-icons a:hover img {
     opacity: 1.0;
 }
 
@@ -59,7 +58,7 @@ body {
         max-height: 200px;
     }
 
-    .contact-icons i {
-        font-size: 30px;
+    .contact-icons img {
+        width: 30px;
     }
 }
