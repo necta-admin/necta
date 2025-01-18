@@ -1,51 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Noto Sans KR', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-         }   
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NECTA - Coming Soon</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #330C6A;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            user-select: none; /* Prevent text selection */
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .container img {
-            max-width: 90%;
-            height: auto;
-            max-height: 300px;
-            pointer-events: none; /* Prevent image dragging */
-        }
-        @media (max-width: 768px) {
-            .container img {
-                max-height: 200px;
-            }
-        }
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #330C6A;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container img {
+    max-width: 90%;
+    height: auto;
+    max-height: 300px;
+    pointer-events: none; /* Prevent image dragging */
+}
+
+.contact-icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.contact-icons a {
+    display: inline-block;
+}
+
+.contact-icons i {
+    opacity: 0.5;
+    font-size: 35px;
+    color: #ffffff;
+    transition: opacity 0.7s ease;
+}
+
+.contact-icons a:hover i {
+    opacity: 1.0;
+}
+
+@media (max-width: 768px) {
+    .container img {
+        max-height: 200px;
+    }
+
+    .contact-icons i {
+        font-size: 30px;
+    }
+}
