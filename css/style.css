@@ -57,6 +57,9 @@ body {
     .necta-img {
         max-height: 200px;
     }
+    .contact-icons {
+        margin-top: 25px;
+    }
 
     .email-img, .kakao-img {
         height: 25px;
