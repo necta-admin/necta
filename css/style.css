@@ -53,6 +53,26 @@ body {
     opacity: 1.0;
 }
 
+ footer {
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
 @media (max-width: 768px) {
     .necta-img {
         max-height: 200px;
@@ -63,4 +83,7 @@ body {
     .email-img, .kakao-img {
         height: 25px;
     }
+                footer p {
+                font-size: 12px;
+            }
 }
