@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #330C6A;
+    background-color: white;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .necta-img {
-    max-width: 90%;
+    max-width: 50%;
     height: auto;
     max-height: 300px;
     pointer-events: none; 
@@ -36,7 +36,7 @@ body {
 .contact-icons {
     display: flex;
     gap: 25px;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .contact-icons a {
@@ -47,6 +47,7 @@ body {
     opacity: 0.5;
     height: 30px;
     transition: opacity 0.7s ease;
+
 }
 
 .contact-icons a:hover .email-img, .contact-icons a:hover .kakao-img {
@@ -57,7 +58,7 @@ body {
             width: 100%;
             padding: 15px 0;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #71cef4;
             position: absolute;
             bottom: 0;
             left: 0;
