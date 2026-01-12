@@ -43,9 +43,16 @@ body {
     display: inline-block;
 }
 
-.email-img, .kakao-img {
-    opacity: 0.5;
-    height: 30px;
+.email-img {
+    opacity: 0.65;
+    height: 40px;
+    transition: opacity 0.7s ease;
+
+}
+
+.kakao-img {
+    opacity: 0.65;
+    height: 40px;
     transition: opacity 0.7s ease;
 
 }
@@ -58,14 +65,14 @@ body {
             width: 100%;
             padding: 15px 0;
             text-align: center;
-            background-color: #71cef4;
+            background-color: #231815;
             position: absolute;
             bottom: 0;
             left: 0;
         }
         footer p {
             margin: 5px 0;
-            font-size: 14px;
+            font-size: 13px;
         }
         footer a {
             color: white;
@@ -79,12 +86,12 @@ body {
         max-height: 200px;
     }
     .contact-icons {
-        margin-top: 27px;    }
+        margin-top: 35px;    }
 
     .email-img, .kakao-img {
-        height: 25px;
+        height: 35px;
     }
-                footer p {
+                .footer p {
                 font-size: 12px;
             }
 }
