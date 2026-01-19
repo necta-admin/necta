@@ -43,11 +43,51 @@ body {
     display: inline-block;
 }
 
+.note-img {
+    opacity: 0.65;
+    height: 40px;
+    transition: opacity 0.7s ease;
+}
+
+.note-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.new-badge {
+    position: absolute;
+    top: -22px;
+    right: 3px;
+
+    background-color: #ff3b30;   /* 강조용 레드 (조금만) */
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 12px;
+
+    letter-spacing: 0.5px;
+    pointer-events: none; /* 클릭 방해 안 하게 */
+}
+.new-badge::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #ff3b30;
+}
+
 .email-img {
     opacity: 0.65;
     height: 40px;
     transition: opacity 0.7s ease;
-
 }
 
 .kakao-img {
@@ -57,7 +97,7 @@ body {
 
 }
 
-.contact-icons a:hover .email-img, .contact-icons a:hover .kakao-img {
+.contact-icons a:hover .email-img, .contact-icons a:hover .kakao-img, .contact-icons a:hover .note-img {
     opacity: 1.0;
 }
 
@@ -81,6 +121,7 @@ body {
         }
 
 
+
 @media (max-width: 768px) {
     .necta-img {
         max-height: 200px;
@@ -88,10 +129,15 @@ body {
     .contact-icons {
         margin-top: 30px;    }
 
-    .email-img, .kakao-img {
+    .email-img, .kakao-img, .note-img {
         height: 30px;
     }
                 .footer p {
                 font-size: 12px;
             }
+
+    .new-badge {
+display: none;
+    }
+
 }
