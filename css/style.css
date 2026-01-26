@@ -57,8 +57,7 @@ body {
 .new-badge {
     position: absolute;
     top: -22px;
-    right: 3px;
-
+    right: -4px;
     background-color: #ff3b30;   /* 강조용 레드 (조금만) */
     color: white;
     font-size: 8px;
